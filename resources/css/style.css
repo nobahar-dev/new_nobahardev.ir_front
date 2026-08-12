@@ -1,0 +1,25 @@
+/*common styles*/
+@font-face {
+    font-family: "irsans_regular";
+    src: url("../fonts/irsansdn_regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "irsans_bold";
+    src: url("../fonts/irsansdn_bold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "irsans_light";
+    src: url("../fonts/irsansdn_light.woff2") format("woff2");
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "irsans_regular", serif;
+    background-color: #FAFAFB;
+}
+/*end of common styles*/
