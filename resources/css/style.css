@@ -36,15 +36,13 @@ body {
     }
 }
 
-@keyframes light-reflection {
+@keyframes shine {
     0% {
-        top: -70px;
-        right: -80px;
+        right: -100%;
     }
 
     100% {
-        top: 100%;
-        right: 110%;
+        right: 180%;
     }
 }
 /*end of animations*/
@@ -249,18 +247,23 @@ section.hero-banner {
 .btn-pro::before {
     content: "";
     position: absolute;
-    width: 25px;
+    width: 60px;
     height: 180px;
     top: -70px;
     right: -80px;
-    background: rgb(198 17 17 / 0.45);
+    background: linear-gradient(
+            90deg,
+            transparent,
+            rgb(186 176 176 / 0.5),
+            transparent
+    );
     transform: rotate(35deg);
     filter: blur(4px);
     pointer-events: none;
 }
 
 .btn-pro:hover::before {
-    animation: light-reflection 0.8s ease-in-out;
+    animation: shine 0.8s ease-in-out;
 }
 
 .btn-pro img {
