@@ -35,6 +35,18 @@ body {
         transform: translateY(-18px);
     }
 }
+
+@keyframes light-reflection {
+    0% {
+        top: -70px;
+        right: -80px;
+    }
+
+    100% {
+        top: 100%;
+        right: 110%;
+    }
+}
 /*end of animations*/
 
 /*navbar*/
@@ -195,12 +207,12 @@ section.hero-banner {
 /*end of synopsis section*/
 
 /*start of about me*/
-.about-title i {
+.section-title i {
     color: #13B7A0;
     font-size: 12px;
 }
 
-.about-title div {
+.section-title div {
     font-family: "irsans_bold", serif;
     font-size: 24px;
     color: #101432;
@@ -220,7 +232,6 @@ section.hero-banner {
     font-family: "irsans_light", serif;
     font-size: 16px;
     color: #101432;
-    border-radius: 8px;
     border: 1px solid #13B7A0;
     text-align: center;
     padding: 10px 0;
@@ -230,12 +241,87 @@ section.hero-banner {
     font-family: "irsans_bold", serif;
     color: #525252;
     border: 1px solid #A4A2A8;
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.btn-pro::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 180px;
+    top: -70px;
+    right: -80px;
+    background: rgb(198 17 17 / 0.45);
+    transform: rotate(35deg);
+    filter: blur(4px);
+    pointer-events: none;
+}
+
+.btn-pro:hover::before {
+    animation: light-reflection 0.8s ease-in-out;
 }
 
 .btn-pro img {
     width: 25px;
 }
 /*end of about me*/
+
+/*services*/
+.service-item-icon {
+    width: 60px;
+    height: 50px;
+    background-color: #EDF6F6;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-item-icon i {
+    color: #76AEC3;
+    font-size: 32px;
+    margin-top: 8px;
+}
+
+.services .row > .col-md-3:nth-child(2) .service-item-icon {
+    background-color: #EBFAF9;
+}
+
+.services .row > .col-md-3:nth-child(2) .service-item-icon i {
+    color: #7CCBCE;
+}
+
+.services .row > .col-md-3:nth-child(3) .service-item-icon {
+    background-color: #F0EFFB;
+}
+
+.services .row > .col-md-3:nth-child(3) .service-item-icon i {
+    color: #4452C5;
+}
+
+.services .row > .col-md-3:nth-child(4) .service-item-icon {
+    background-color: #FDF5E9;
+}
+
+.services .row > .col-md-3:nth-child(4) .service-item-icon i {
+    color: #FAC788;
+}
+
+.service-item-title {
+    font-family: "irsans_bold", serif;
+    font-size: 18px;
+    color: #101432;
+}
+
+.service-item-desc {
+    font-family: "irsans_regular", serif;
+    font-size: 16px;
+    color: #101432;
+}
+/*end of services*/
 
 
 
