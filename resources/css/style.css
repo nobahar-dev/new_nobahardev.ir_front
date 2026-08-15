@@ -23,3 +23,246 @@ body {
     background-color: #FAFAFB;
 }
 /*end of common styles*/
+
+/*animations*/
+@keyframes floating {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-18px);
+    }
+}
+/*end of animations*/
+
+/*navbar*/
+nav.navbar {
+    background-color: #020E26;
+    border-bottom: 1px solid #111F37;
+}
+
+.navbar-brand img {
+    width: 40px;
+}
+
+.navbar-brand span {
+    font-family: "irsans_bold", serif;
+    font-size: 20px;
+}
+
+.active {
+    color: #13B7A0!important;
+}
+
+.nav-item a:hover {
+    color: #13B7A0!important;
+}
+
+.resume-dn {
+    background-color: #13B7A0;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    padding: 6px 15px;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+
+.resume-dn:hover {
+    background-color: #0E9F8C;
+    box-shadow: 0 6px 18px rgba(19, 183, 160, 0.25);
+}
+/*end of navbar*/
+
+/*hero section*/
+section.hero-banner {
+    min-height: 400px;
+    background-image: url("../images/hero_background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-img {
+    width: 285px;
+    display: block;
+    margin-left: 50px;
+    margin-right: auto;
+    animation: floating 2s ease-in-out infinite;
+    will-change: transform;
+}
+
+.hero-content {
+    height: 400px;
+}
+
+.hero-text p:first-child {
+    font-family: "irsans_regular", serif;
+    font-size: 20px;
+    color: white;
+}
+
+.hero-text p:nth-child(2) {
+    font-family: "irsans_bold", serif;
+    font-size: 26px;
+    color: white;
+}
+
+.hero-text p:nth-child(2) span {
+    color: #0E9F8C;
+}
+
+.hero-text p:last-child {
+    font-family: "irsans_regular", serif;
+    font-size: 16px;
+    color: #A4A2A8;
+}
+
+.hero-button a:first-child {
+    background-color: #13B7A0;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    padding: 8px 25px;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+
+.hero-button a:first-child:hover {
+    background-color: #0E9F8C;
+    box-shadow: 0 6px 18px rgba(19, 183, 160, 0.25);
+}
+
+.hero-button a:last-child {
+    background: none;
+    color: #A4A2A8;
+    text-align: center;
+    border-radius: 8px;
+    padding: 8px 25px;
+    text-decoration: none;
+    border: 1px solid #A4A2A8;
+    transition: all .3s ease-in-out;
+}
+
+.hero-button a:last-child:hover {
+    background: #89898f;
+    color: white;
+    border-color: #89898f;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(164, 162, 168, 0.25);
+}
+
+.hero-button {
+    margin-top: 10px!important;
+}
+
+.hero-social a {
+    transition: all .3s ease-in-out;
+}
+
+.hero-social a:hover {
+    color: #0E9F8C!important;
+}
+/*end of hero section*/
+
+/*synopsis section*/
+.synopsis {
+    margin-top: -40px;
+    position: relative;
+    z-index: 10;
+}
+
+.synopsis-content {
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    background-color: #FCFCFE;
+    padding: 25px 15px;
+}
+
+.synopsis-item div.number {
+    font-family: "irsans_bold", serif!important;
+    font-size: 20px;
+}
+
+.synopsis-item div.title {
+    font-family: "irsans_regular", serif;
+    font-size: 18px;
+}
+/*end of synopsis section*/
+
+/*start of about me*/
+.about-title i {
+    color: #13B7A0;
+    font-size: 12px;
+}
+
+.about-title div {
+    font-family: "irsans_bold", serif;
+    font-size: 24px;
+    color: #101432;
+}
+
+.about-text {
+    font-family: "irsans_regular", serif;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 30px;
+    color: #101432;
+}
+
+.about-profession a.btn-more-info, .btn-pro {
+    width: 200px;
+    text-decoration: none;
+    font-family: "irsans_light", serif;
+    font-size: 16px;
+    color: #101432;
+    border-radius: 8px;
+    border: 1px solid #13B7A0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.btn-pro {
+    font-family: "irsans_bold", serif;
+    color: #525252;
+    border: 1px solid #A4A2A8;
+}
+
+.btn-pro img {
+    width: 25px;
+}
+/*end of about me*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
