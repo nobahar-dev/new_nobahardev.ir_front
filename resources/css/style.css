@@ -21,6 +21,7 @@ html {
 body {
     font-family: "irsans_regular", serif;
     background-color: #FAFAFB;
+    color: #101432;
 }
 /*end of common styles*/
 
@@ -263,7 +264,7 @@ section.hero-banner {
 }
 
 .btn-pro:hover::before {
-    animation: shine 0.8s ease-in-out;
+    animation: shine 0.5s ease-in-out;
 }
 
 .btn-pro img {
@@ -325,6 +326,107 @@ section.hero-banner {
     color: #101432;
 }
 /*end of services*/
+
+/*experience*/
+.ex-item {
+    position: relative;
+    min-height: 80px;
+}
+
+.ex-item-bulet {
+    position: relative;
+    width: 20px;
+    height: 80px;
+    flex-shrink: 0;
+}
+
+.ex-item-bulet i {
+    position: relative;
+    color: #143656;
+    font-size: 10px;
+    z-index: 2;
+}
+
+.ex-line {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: calc(100%);
+    background-color: #0F4480;
+}
+
+.ex-item:last-child .ex-line {
+    display: none;
+}
+
+.ex-content {
+    width: 300px;
+}
+
+.ex-title {
+    font-family: "irsans_bold", serif;
+    font-size: 16px;
+}
+
+.ex-subtitle {
+    font-family: "irsans_regular", serif;
+    font-size: 14px;
+}
+
+.ex-date {
+    font-family: "irsans_bold", serif;
+    font-size: 16px;
+}
+/*end of experience*/
+
+/*portfolio*/
+.btn-all-port {
+    font-family: "irsans_regular", serif;
+    border-radius: 4px;
+    border: 1px solid #13B7A0;
+    color: #101432;
+    text-decoration: none;
+    padding: 10px;
+    transition: all .3s ease-in-out;
+}
+
+.btn-all-port:hover {
+    background-color: #13B7A0;
+    color: white;
+}
+
+.port-img {
+    width: 400px;
+}
+
+.port-category {
+    width: max-content;
+    background-color: #E2F5F5;
+    color: #23A18F;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.port-title {
+    font-family: "irsans_bold", serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.port-abstract {
+    font-family: "irsans_regular", serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+.port-read-more {
+    color: #23A18F;
+    text-decoration: none;
+    font-family: "irsans_bold", serif;
+}
+/*end of portfolio*/
 
 
 
