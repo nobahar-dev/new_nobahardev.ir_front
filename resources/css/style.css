@@ -428,6 +428,72 @@ section.hero-banner {
 }
 /*end of portfolio*/
 
+/*blog*/
+.blog-category {
+    width: max-content;
+    color: #23A18F;
+    background-color: #E2F5F5;
+    padding: 4px 15px;
+    border-radius: 8px;
+}
+
+.blog-title {
+    font-family: "irsans_bold", serif;
+    font-size: 20px;
+}
+
+.blog-desc {
+    font-family: "irsans_regular", serif;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 25px;
+}
+
+.blog-writer, .blog-date {
+    color: #8187A1;
+    text-decoration: none;
+}
+
+.btn-blog-read-more {
+    width: max-content;
+    color: #23A18F;
+    background-color: #E2F5F5;
+    text-decoration: none;
+    padding: 4px 15px;
+    border-radius: 8px;
+    font-family: "irsans_regular", serif;
+    font-size: 14px;
+}
+
+.btn-blog-read-more i {
+    font-size: 18px;
+}
+
+.category-item {
+    text-decoration: none;
+    font-family: "irsans_bold", serif;
+    color: #737477;
+}
+
+.category-item .active {
+    color: #23A18F;
+}
+
+.category-item .cat-count {
+    border-radius: 15px;
+    color: #474747;
+    background-color: #D9D9D9;
+    padding: 5px 10px;
+}
+
+.category-item.active .cat-count {
+    border-radius: 15px;
+    background-color: #F1FAF7;
+    color: #23A18F;
+    padding: 5px 10px;
+}
+/*end of blog*/
+
 
 
 
