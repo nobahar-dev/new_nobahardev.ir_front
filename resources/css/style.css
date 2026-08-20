@@ -493,6 +493,34 @@ section.hero-banner {
     padding: 5px 10px;
 }
 /*end of blog*/
+/*footer*/
+.footer {
+    background-color: #020E26;
+    color: white;
+}
+
+.footer-title {
+    font-family: "irsans_bold", serif;
+    font-size: 20px;
+}
+
+.contact-info {
+    font-family: "irsans_light", serif;
+    font-size: 16px;
+}
+
+.footer-access li a {
+    text-decoration: none;
+    font-family: "irsans_light", serif;
+    font-size: 16px;
+    color: white;
+    transition: color .3s ease-in-out;
+}
+
+.footer-access li a:hover {
+    color: #23A18F;
+}
+/*end of footer*/
 
 
 
